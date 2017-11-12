@@ -256,9 +256,18 @@ li.search .input-group {
 }
 
 @media (min-width: 320px) and (max-width: 767px){
+	.navbar.navbar-transparent {
+		padding-top: 35px;
+		margin-top: -35px;
+	}
+
+	.navbar .navbar-brand {
+		margin: 0px;
+		padding: 0px;
+	}
 	#logotipo {
 		height: 150px;
-		top: 10px;
+		top: -35px;
 		left: 20px;
 		position: absolute;
 	}
