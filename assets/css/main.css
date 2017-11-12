@@ -20,64 +20,54 @@ body {
 
 #logotipo {
 	position: absolute;
-	top: -15px;
-    height: 250px;
-    left: -40px;
+	top: -55px;
+	height: 250px;
+	margin-left: -80px;
 }
 
-.navbar.navbar-transparent {
-	padding-top: 0px;
-	margin-top: -35px;
-}
-
-header .row {
-	margin-top: 0px;
-}
-
-#menu {
-	margin: 30px 0;
-}
-#menu li {
-	display: inline-block;
-	font-family: "OpenSans";
+li.search {
+	display: inline;
 }
 .search input {
-	background-color: #5C2D90;
+	background-color: transparent;
 	color: #fff;
 	border: none;
 	height: 30px;
 	line-height: 30px;
 	padding-left: 8px;
-	left: -346px;
+	left: 130px;
 	position: relative;
 	width: 470px;
-	border-radius: 7px;
+	top: 15px;
 }
+
 .search ::-webkit-input-placeholder {
 	color: #fff;	
+	text-transform: uppercase;
+	font-weight: 600;
+	font-size: 12px;
 }
+
 .search button {
 	background: none;
 	border: none;
 	position: absolute;
-    right: 350px;
-    top: 7px;
+    right: 330px;
+    top: 22px;
 }
 .search button i {
 	font-size: 14px;
 	color: rgba(255, 255, 255, .5);
 }
-li a {
-	color: #000;
-    font-size: 16px;
-    padding: 4px 5px;
+
+#search {
+	display: none;
 }
 .search .input-group {
-	top: 8px;
+	top: -7px;
 }
 
 .search i {
-
 	font-size: 14px;
 	color: rgba(255, 255, 255, .5);
 }
@@ -217,14 +207,55 @@ li.search .input-group {
 	font-family: 'OpenSans';
 }
 
-@media (min-width: 768px) {
+@media (min-width: 768px) and (max-width: 991px){
 	.navbar.navbar-transparent {
 		padding-top: 35px;
 		margin-top: -35px;
 	}
+
+	.navbar .navbar-brand {
+		margin: 0px;
+		padding: 0px;
+	}
+	#logotipo {
+		height: 200px;
+		top: -30px;
+		left: 10px;
+		position: absolute;
+	}
+	li.search {
+		display: none;
+	}
+	#search {
+		display: inline;
+	}
+	#search ::-webkit-input-placeholder {
+		color: #9A9A9A !important;
+		text-transform: uppercase;
+		font-weight: 600;
+		font-size: 12px;
+	}
+	#search input {
+		width: 170px;
+		border-radius: 7px;
+		border: none;
+		line-height: 30px;
+		background-color: #FFFCF5;
+		margin-left: 20px;
+	}
+	#search button {
+		background: none;
+		border: none;
+		position: relative;
+		left: calc(100% - 230px);
+	}
+	#search button i {
+		font-size: 14px;
+		color: #9A9A9A;
+	}
 }
 
-@media (max-width: 579px) and (min-width: 320px) {
+@media (min-width: 320px) and (max-width: 767px){
 	#logotipo {
 		height: 150px;
 		top: 10px;
@@ -234,5 +265,32 @@ li.search .input-group {
 	li.search {
 		display: none;
 	}
-
+	#search {
+		display: inline;
+	}
+	#search ::-webkit-input-placeholder {
+		color: #9A9A9A !important;
+		text-transform: uppercase;
+		font-weight: 600;
+		font-size: 12px;
+	}
+	#search input {
+		width: 170px;
+		border-radius: 7px;
+		border: none;
+		line-height: 30px;
+		background-color: #FFFCF5;
+		margin-left: 20px;
+	}
+	#search button {
+		background: none;
+		border: none;
+		position: absolute;
+		left: calc(100% - 200px);
+		top: 5px;
+	}
+	#search button i {
+		font-size: 14px;
+		color: #9A9A9A;
+	}
 }
