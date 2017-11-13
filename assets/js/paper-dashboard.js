@@ -21,6 +21,7 @@ var navbar_initialized = false;
 
 $(document).ready(function(){
     window_width = $(window).width();
+    $('.modal').appendTo('body');
 
     // Init navigation toggle for small screens
     if(window_width <= 991){
