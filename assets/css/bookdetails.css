@@ -358,5 +358,56 @@ p {
   }
 }
 
+.team-members {
+  margin-left: 50px;
+}
 
+.title {
+  min-width: 200px;
+}
+
+.img-circle {
+  width: 100px;
+}
+
+.btn-icon {
+  margin: 7px;
+}
+
+.btn-success {
+  background-color: rgb(50, 35, 67);
+  border-color: rgb(50, 35, 67);
+}
+.text-success {
+  color: rgb(50, 35, 67) !important;
+}
+
+dl {
+  columns: 2;
+  line-height: 1.8em;
+  margin: -0.4em 0;
+}
+
+dt,
+dd {
+  display: inline;
+}
+
+dt {
+  font-weight: 500;
+}
+dt:after {
+  content: ':';
+}
+
+dd:after {
+  content: '';
+  display: block;
+}
+
+.btn-success:hover {
+  background: #9d8ba9;
+  color: rgb(50, 35, 67);
+  border-color: #9d8ba9;
+}
 /*# sourceMappingURL=bookdetails.css.map */
