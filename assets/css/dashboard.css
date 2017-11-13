@@ -136,3 +136,9 @@ a {
 .modal-header .close {
     margin-top: -20px;
 }
+
+.title {
+	font-size: 30px;
+	float: left;
+	margin-left: 10px;
+}
