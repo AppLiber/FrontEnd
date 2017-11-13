@@ -21,7 +21,7 @@ h3 {
   font-size: 24px; }
 
 h4 {
-  margin-bottom: 12px;
+  margin-top: 12px;
   font-size: 22px;
   line-height: 40px;
   color: rgba(49, 49, 49, 0.7); }
@@ -79,6 +79,12 @@ a.button {
   float: right;
   width: calc(100% - 200px); }
 
+.icon-color {
+  float: left;
+}
+.icon-big {
+  font-size: 30px;
+}
 /*
  *  Search Input
 */
@@ -95,14 +101,13 @@ a.button {
   position: relative;
   display: block;
   float: right;
-  margin-top: 10px;
+  margin-top: 20px;
   padding: 14px 7px 0;
   width: 100%;
   border: none;
   border-radius: 0;
   color: #313131;
   font-weight: normal;
-  font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
   background: none;
   box-shadow: none;
   -webkit-appearance: none;
@@ -149,7 +154,7 @@ a.button {
     margin-top: 2px;
     width: 100%;
     height: calc(100% - 10px);
-    border-bottom: 3px solid #219e9a;
+    border-bottom: 3px solid #5C2D90;
     transform: translate3d(-100%, 0, 0);
     transition: transform 0.3s; }
 
@@ -361,7 +366,6 @@ a.button {
     z-index: -1;
     transition: all 250ms ease-out; }
   .book-item:hover:after {
-    box-shadow: 0px 1px 1px 1px rgba(210, 214, 213, 0.5);
     background-color: #fff; }
   .book-item:hover .item-img img {
     box-shadow: 0px 0px 10px 0px rgba(49, 49, 49, 0.25); }
